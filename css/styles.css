@@ -443,6 +443,21 @@ link:focus,
   color: var(--logo-button-color);
 }
 
+.button-signup {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--main-bg-text-color);
+  background-color: var(--logo-button-color);
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  padding-right: 10px;
+}
 /*Порфтолио*/
 .portfolio-list-title {
   font-size: 18px;
@@ -579,6 +594,7 @@ address {
 .footer-container {
   display: flex;
   align-items: baseline;
+  flex-basis: calc((100% - 30px) / 2);
 }
 /*Иконки*/
 
@@ -672,6 +688,26 @@ address {
 .social-icons-link:hover .social-icon,
 .social-icons-link:focus .social-icon {
   fill: var(--main-bg-text-color);
+}
+
+.signup-form {
+  display: inline-block;
+  margin-left: 93px;
+}
+
+.signup-input {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+
+  display: inline;
+  align-items: center;
+  width: 358px;
+  height: 50px;
+
+  color: var(--link-footer);
+  margin-right: 12px;
+  padding: 15px;
 }
 
 /*Клиенты*/
@@ -771,6 +807,10 @@ address {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form {
+  display: inline-block;
 }
 /* .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) opacity(0);
