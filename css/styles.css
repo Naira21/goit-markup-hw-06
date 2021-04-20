@@ -409,18 +409,21 @@ button {
   margin-right: 8px;
 }
 .button-order {
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  padding: 10px 32px;
+  text-align: center;
+
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   color: var(--main-bg-text-color);
   background-color: var(--logo-button-color);
-  text-align: center;
   border-radius: 4px;
-  width: 200px;
-  height: auto;
-  padding: 10px 32px;
-  display: inline-block;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button:focus,
@@ -451,15 +454,17 @@ link:focus,
   margin-left: auto;
   width: 200px;
   height: 50px;
+  align-items: center;
+  justify-content: center;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   color: var(--main-bg-text-color);
   background-color: var(--logo-button-color);
-  align-items: center;
-  justify-content: center;
   border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-send {
@@ -477,6 +482,8 @@ link:focus,
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 footer .button-signup {
@@ -502,6 +509,8 @@ footer .button-signup {
 .portfolio-list-type {
   margin-bottom: 0px;
   color: var(--link-paragraph-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-filter {
@@ -533,8 +542,8 @@ footer .button-signup {
   opacity: 0;
   background-color: var(--overlay-portfolio-card);
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
+
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* .overlay:hover::before {
@@ -555,6 +564,8 @@ footer .button-signup {
   font-size: 18px;
   line-height: 1.6;
   color: var(--main-bg-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover .portfolio-card-text {
   opacity: 1;
@@ -611,6 +622,8 @@ address {
   text-decoration: inherit;
   margin-bottom: 20px;
   display: block;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join {
@@ -645,6 +658,8 @@ address {
   color: var(--link-footer);
   margin-right: 12px;
   padding: 15px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Иконки*/
@@ -778,10 +793,7 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .client-icon:hover,
-.client-icon:focus {
-  fill: var(--logo-button-color);
-} */
+
 .clients-bg {
   background-color: var(--main-bg-text-color);
 }
@@ -863,6 +875,8 @@ address {
   border: 1px solid var(--modal-input);
   box-sizing: border-box;
   border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-comment {
@@ -872,6 +886,14 @@ address {
   border-radius: 4px;
   padding: 12px 16px;
   margin: 4px 0 20px 0;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-comment:hover,
+.form-comment:focus {
+  border: 1px solid var(--logo-button-color);
+  cursor: pointer;
 }
 
 .modal-label {
@@ -881,6 +903,8 @@ address {
 
   color: var(--link-paragraph-color);
   position: relative;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon {
@@ -953,6 +977,9 @@ textarea {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   margin-right: 8.38px;
+  background-color: var(--main-bg-text-color);
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-agreement {
@@ -969,12 +996,14 @@ textarea {
   color: var(--logo-button-color);
   text-decoration: underline;
 }
-
 label:focus,
 label:hover {
+  cursor: pointer;
   fill: var(--logo-button-color);
 }
 
+.modal-input:hover,
 .modal-input:focus {
   border: 1px solid var(--logo-button-color);
+  cursor: pointer;
 }
