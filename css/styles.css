@@ -937,3 +937,44 @@ address {
 textarea {
   resize: none;
 }
+
+.checkbox {
+  appearance: none;
+}
+
+.checkbox:checked + .icon-check {
+  background-color: var(--logo-button-color);
+  border: 2px solid transparent;
+  background-origin: border-box;
+}
+.icon-check {
+  display: inline-block;
+  border: 2px solid var(--main-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  margin-right: 8.38px;
+}
+
+.text-agreement {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--link-paragraph-color);
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.text-agreement-condition {
+  color: var(--logo-button-color);
+  text-decoration: underline;
+}
+
+label:focus,
+label:hover {
+  fill: var(--logo-button-color);
+}
+
+.modal-input:focus {
+  border: 1px solid var(--logo-button-color);
+}
