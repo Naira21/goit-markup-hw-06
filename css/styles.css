@@ -1000,7 +1000,6 @@ textarea {
 .text-agreement-condition {
   color: var(--logo-button-color);
   text-decoration: underline;
-  padding-left: 4px;
   outline: none;
 }
 label:focus,
